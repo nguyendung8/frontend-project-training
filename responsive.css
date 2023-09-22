@@ -1,0 +1,127 @@
+/* Mobile */
+@media only screen and (max-width: 46.1875em) {
+  #header {
+    min-width: 500px;
+  }
+  .main-header-img {
+    left: 630px;
+    width: 130px;
+  }
+  #container {
+    width: 819px;
+    display: flex;
+    justify-content: center;
+  }
+  .header-menu {
+    margin: 10px;
+    gap: 39px;
+  }
+  .content {
+    margin-left: 0;
+    width: 715px;
+  }
+  .nav-contain {
+    margin-left: 35px;
+    width: 400px;
+  }
+  .form-contain {
+    margin-left: 28px;
+  }
+  .first-content-header, 
+  .first-content-container-top,
+  .first-content-container-bottom,
+  .people-ask-top,
+  .people-ask-bottom,
+  .summary-container,
+  .line-chart {
+    width: inherit;
+  }
+  .taxBerg-container {
+    max-width: none;
+  }
+  .line-chart {
+    max-width: none;
+  }
+  .header-logo-text {
+    margin: 20px 10px 20px 32px;
+  }
+  .header-right {
+    margin: auto 48px auto 6px;
+  }
+  .notice {
+    display: flex;
+    justify-content: center;
+  }
+  #footer {
+    width: 785px;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+/* Tablet */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  #header {
+    min-width: 500px;
+  }
+  #container {
+    width: 819px;
+    display: flex;
+    justify-content: center;
+  }
+  .content {
+    margin-left: 0;
+    width: 726px;
+  }
+  .first-content-header, 
+  .first-content-container-top,
+  .first-content-container-bottom,
+  .people-ask-top,
+  .people-ask-bottom,
+  .summary-container,
+  .line-chart {
+    width: inherit;
+  }
+  .taxBerg-container {
+    max-width: none;
+  }
+  .line-chart {
+    max-width: none;
+  }
+  .notice {
+    display: flex;
+    justify-content: center;
+  }
+  #footer {
+    width: 785px;
+    display: flex;
+    justify-content: center;
+  }
+  .notice-text {
+    font-size: 15px;
+  }
+  .main-header-img {
+    left: 630px;
+    width: 130px;
+  }
+  .nav-contain {
+    margin-left: 35px;
+    width: 400px;
+  }
+  .form-contain {
+    margin-left: 28px;
+  }
+  .line-chart-img {
+    width: 567px;
+  }
+  .header-menu {
+    margin: 14px;
+    gap: 28px;
+  }
+  .header-logo-text {
+    margin: 20px 10px 20px 32px;
+  }
+  .header-right {
+    margin: auto 48px auto 6px;
+  }
+}
