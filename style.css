@@ -5,6 +5,9 @@ body {
 }
 
 #header {
+  display: flex;
+}
+.nav-pc {
   height: 80px;
   width: 100%;
   color: #222222;
@@ -180,6 +183,11 @@ body {
   background-color: #f6f6f9;
   border: 1px solid #f6f6f9;
   box-sizing: border-box;
+  appearance: none;
+  background-image: url(https://cdn-static.talent.com/img/tax-calculator/input__dropdown-menu.png);
+  background-position: calc(98% - 0.5rem), 100% 0;
+  background-size: 24px;
+  background-repeat: no-repeat;
 }
 .calculator-but {
   background-color: #e34b31;
@@ -314,9 +322,6 @@ body {
 }
 .chart-holder {
   position: relative;
-}
-.second-content {
-
 }
 .taxBerg-container {
   background: radial-gradient(77.83% 77.83% at 49.94% 59.95%, rgba(157, 233, 246, 0) 0%, #9DE9F6 100%);
@@ -873,3 +878,126 @@ body {
   text-align: center;
   vertical-align: middle;
 }
+
+.nav-bar-btn {
+  width: 18px;
+  height: 16px;
+  color: white;
+  display: none;
+  margin-left: 8px;
+}
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  animation: fadeIn linear 0.2s;
+}
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all linear 0.2s;
+  background: white url('./images/mobile-menu-background.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.nav-mobile-link {
+  text-decoration: none;
+  color: #30183F;
+  display: block;
+  padding: 22px 0px;
+  padding-left: 28px;
+  font-size: 18px;
+}
+.nav-mobile-close {
+  width: 18px;
+  height: 18px;
+  color: #666;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.nav-input:checked ~ .nav-overlay {
+  display: block;
+}
+.nav-input:checked ~ .nav-mobile {
+  transform: translateX(0%);
+  opacity: 1;
+  z-index: 5000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu__item.menu__multiItem {
+  border-bottom: none;
+  height: 56px;
+  background: #602770;
+  padding: 0px 55px;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+.menu__multiItem .menu__item.menu__currentPage {
+  color: white;
+  font-weight: 500;
+  opacity: 1;
+  background: none;
+}
+.menu__multiItem .menu__item {
+  border-bottom: none;
+  display: inline-block;
+  padding: 0px;
+  line-height: 56px;
+  margin-right: 16px;
+  color: white;
+  opacity: .3;
+}
+.nav-mobile-list {
+  border-top: 1px solid #eee;
+  padding-left: 22px;
+}
+.menu-item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.menu-item-icon {
+  font-size: 24px !important;
+}
+.account-item {
+  justify-content: space-between;
+}
+.item-currentpage::after {
+  position: absolute;
+  content: '';
+  height: 27px;
+  width: 4px;
+  background: #E34B31;
+  top: 168px;
+  left: 10px;
+}
+/* option {
+  color: red;
+  padding: 5px;
+  border-radius: 10px;
+}
+option:hover {
+  background-color: #eee;
+} */
